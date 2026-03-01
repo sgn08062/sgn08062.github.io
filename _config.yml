@@ -107,7 +107,7 @@ content:
           - <mark>AWS S3 API 통합</mark>: 이미지 등 정적 리소스의 안정적인 저장과 빠른 관리를 위해 클라우드 스토리지 연동 시스템을 구축했습니다.
           - <mark>Toast Alarm 시스템</mark>: 사용자 작업 결과에 대한 즉각적인 피드백을 제공하는 실시간 알림 기능을 구현하여 전체적인 UX(사용자 경험)를 개선했습니다.
 
-          - <mark>기술 스택<mark>: Java, Spring Boot 3, MyBatis, MySQL, React, AWS S3, Docker
+          - <mark>기술 스택</mark>: Java, Spring Boot 3, MyBatis, MySQL, React, AWS S3
 
   # - title: Experience # Title for the section
   #   layout: list # Type of content section (list/text)
