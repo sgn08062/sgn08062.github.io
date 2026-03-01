@@ -83,7 +83,7 @@ content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: left
+      - layout: top
         title: Link Log Mate
         caption: 2026.01.07~2026.02.08
         link: https://github.com/sgn08062/LLMSpring 
