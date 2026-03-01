@@ -8,6 +8,7 @@ version: 2
 # Personal info
 name: 이경훈
 title: 백엔드 개발자
+phone: 010-5366-1274
 email: sgn08062@naver.com
 # website: www.github.com/sgn08062
 
@@ -47,20 +48,38 @@ darkmode: false
 # About Section
 # about_title: About Me
 about_profile_image: images/profile.jpg
-about_content: | # this will include new lines to allow paragraphs
-  
+about_content: |
+  Java, Spring boot3, JPA로 백엔드 프로젝트를 진행한 경험이 있는 신입 개발자입니다.
+  적극적인 질문과 탐구심으로 문제 해결 능력과 새로운 것에 도전하는 인재가 되겠습니다.
 
 content:
   - title: Skills
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      | 구분 | 기술 스택 |
-      | --- | --- |
-      | Language | JAVA (Primary), JavaScript, SQL, C |
-      | Framework | Spring Framework, React |
-      | Database | MySQL |
-      | Infrastructure | AWS (EC2/S3), Docker |
-      | Tools | Git, GitHub |
+    layout: list
+    content:
+      - layout: left
+        title: Backend
+        description: | # this will include new lines to allow paragraphs
+          - JAVA
+          - Spring Framework
+          - SQL
+          - MySQL
+
+      - layout: left
+        title: DevOps
+        description: |
+          - AWS (EC2, S3)
+
+      - layout: left
+        title: Frontend
+        description: |
+          - React
+          - JavaScript
+
+      - layout: left
+        title: Tools
+        description: |
+          - Git
+          - GitHub
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -108,17 +127,23 @@ content:
 
           I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
 
-  - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+  # - title: A Little More About Me
+  #   layout: text
+  #   content: | # this will include new lines to allow paragraphs
+  #     Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+  #     - Rock climbing
+  #     - Gaming
+  #     - Knitting
+  #     - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+  #     Look at this cool image  
+  #     ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+
+  - title: Certificates
+    layout: text
+    content: |
+      - <bold>정보처리기사</bold>: 2025.09.12 취득
+      - <bold>SQLD</bold>: 2025.12.12 취득
 
 # Footer
 footer_show_references: true
