@@ -101,13 +101,21 @@ content:
         description: | # this will include new lines to allow paragraphs
           **Spring Boot 3**와 **React**를 활용하여 깃 허브 리포지토리의 커밋 로그를 지능적으로 관리하는 풀스택 서비스, **Link Log Mate**를 개발했습니다. 프로젝트 전반의 백엔드 로직과 주요 인프라 설계를 주도하며 다음과 같은 핵심 기능을 직접 구현했습니다.
 
-          **[주요 구현 기능 및 기여도]**
-          - <mark>GitHub OAuth 연동</mark>: Spring Security를 활용한 소셜 로그인 기능을 구현하여 사용자 인증의 편의성과 보안성을 강화했습니다.
-          - <mark>Gemini API & 프롬프트 최적화</mark>: LLM 연동을 통해 수집된 링크의 핵심 내용을 요약하고, 데이터 성격에 따라 자동 분류하는 지능형 로직을 설계했습니다.
-          - <mark>AWS S3 API 통합</mark>: 이미지 등 정적 리소스의 안정적인 저장과 빠른 관리를 위해 클라우드 스토리지 연동 시스템을 구축했습니다.
-          - <mark>Toast Alarm 시스템</mark>: 사용자 작업 결과에 대한 즉각적인 피드백을 제공하는 실시간 알림 기능을 구현하여 전체적인 UX(사용자 경험)를 개선했습니다.
+          **[백엔드 (Backend)]**
+          - <mark>회원가입 및 보안 강화</mark>: 비밀번호 단방향 암호화 저장을 통해 데이터베이스 침해 시에도 개인정보를 안전하게 보호하도록 설계했습니다.
+          - <mark>JWT 기반 인증 시스템</mark>: Access Token(단기)과 Refresh Token(장기)을 조합하여 보안성과 로그인 유지 편의성을 동시에 확보했습니다.
+          - <mark>GitHub OAuth 연동</mark>: Spring Security를 활용한 소셜 로그인으로 사용자 접근성을 높이고 인증 과정을 일원화했습니다.
+          - <mark>Gemini API 연동</mark>: 프롬프트 엔지니어링을 통해 수집된 링크의 핵심을 요약하고 데이터 성격에 따라 자동 분류하는 지능형 로직을 설계했습니다.
+          - <mark>AWS S3 통합 및 알림</mark>: 이미지 정적 리소스의 효율적인 관리를 위해 S3 연동을 구축하고, Toast Alarm 시스템으로 즉각적인 피드백 UX를 제공했습니다.
 
-          - <mark>기술 스택</mark>: Java, Spring Boot 3, MyBatis, MySQL, React, AWS S3
+          **[프론트엔드 (Frontend)]**
+          - <mark>API 통신 모듈화 (api.js)</mark>: `fetch`를 래핑하여 모든 API 요청 시 JWT 토큰을 헤더에 자동 주입하도록 구현했습니다. 특히 401/403 에러 발생 시, Refresh Token으로 Access Token을 재발급받고 **실패한 요청을 자동으로 재시도**하는 인터셉터(Interceptor) 로직을 구축하여 끊김 없는 사용자 경험을 제공했습니다.
+          - <mark>라우트 보안 처리 (AuthHandler.js)</mark>: React Router와 연동하여 사용자의 인증 상태를 서버(`/api/auth/validate`)와 검증하고, 비인가 사용자의 접근을 차단하여 로그인 페이지로 리다이렉트하는 Private Route 체계를 구현했습니다.
+
+          **[인프라 및 배포 (Deployment)]**
+          - <mark>Docker 기반 배포 프로세스 구축</mark>: Backend와 Frontend를 각각 Docker 이미지로 컨테이너화하여 환경 의존성을 제거했습니다. Docker Hub와 AWS EC2를 연계한 신속한 이미지 교체 및 재실행 프로세스로 배포 시 서비스 중단 시간을 최소화했습니다.
+
+          - **기술 스택**: Java, Spring Boot 3, MyBatis, MySQL, React, AWS S3, Docker
 
   # - title: Experience # Title for the section
   #   layout: list # Type of content section (list/text)
