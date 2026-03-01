@@ -3,3 +3,7 @@
 ---
 
 @import 'modern-resume-theme';
+
+.row, .list-item, .align-items-center {
+  align-items: flex-start !important;
+}
