@@ -86,32 +86,28 @@ content:
       - layout: left
         title: Link Log Mate
         caption: 2026.01.07~2026.02.08
-        link: github.com/sgn08062/LLMSpring
-        # link_text: Project Website
+        link: https://github.com/sgn08062/LLMSpring 
         additional_links:
-          - title:  sgn08062/LLMSpring
+          # 여기에 여러 개의 링크를 리스트 형태로 추가합니다.
+          - title: Backend (Spring Boot)
             icon: fab fa-github
-            url: github.com/sgn08062
-        link: github.com/sgn08062/LLMReact
-        additional_links:
-          - title: sgn08062/LLMReact
-            icon: fag fa-github
-            url: github.com/sgn08062/LLMReact
+            url: https://github.com/sgn08062/LLMSpring
+          - title: Frontend (React)
+            icon: fab fa-github
+            url: https://github.com/sgn08062/LLMReact
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          AI(Gemini API) 기술을 접목하여 단순한 저장을 넘어 지능적인 정보 큐레이션을 제공하는 스마트 로그 관리 서비스입니다.
         description: | # this will include new lines to allow paragraphs
-          **Spring Boot 3**와 **React**를 활용하여 대량의 웹 링크와 개인 로그를 지능적으로 관리하는 풀스택 서비스, **Link Log Mate**를 개발했습니다. 프로젝트 전반의 백엔드 로직과 주요 인프라 설계를 주도하며 다음과 같은 핵심 기능을 직접 구현했습니다.
+          **Spring Boot 3**와 **React**를 활용하여 깃 허브 리포지토리의 커밋 로그를 지능적으로 관리하는 풀스택 서비스, **Link Log Mate**를 개발했습니다. 프로젝트 전반의 백엔드 로직과 주요 인프라 설계를 주도하며 다음과 같은 핵심 기능을 직접 구현했습니다.
 
           **[주요 구현 기능 및 기여도]**
-          - **GitHub OAuth 연동**: Spring Security를 활용한 소셜 로그인 기능을 구현하여 사용자 인증의 편의성과 보안성을 강화했습니다.
-          - **Gemini API & 프롬프트 최적화**: LLM 연동을 통해 수집된 링크의 핵심 내용을 요약하고, 데이터 성격에 따라 자동 분류하는 지능형 로직을 설계했습니다.
-          - **AWS S3 API 통합**: 이미지 등 정적 리소스의 안정적인 저장과 빠른 관리를 위해 클라우드 스토리지 연동 시스템을 구축했습니다.
-          - **Toast Alarm 시스템**: 사용자 작업 결과에 대한 즉각적인 피드백을 제공하는 실시간 알림 기능을 구현하여 전체적인 UX(사용자 경험)를 개선했습니다.
+          - <mark>GitHub OAuth 연동</mark>: Spring Security를 활용한 소셜 로그인 기능을 구현하여 사용자 인증의 편의성과 보안성을 강화했습니다.
+          - <mark>Gemini API & 프롬프트 최적화</mark>: LLM 연동을 통해 수집된 링크의 핵심 내용을 요약하고, 데이터 성격에 따라 자동 분류하는 지능형 로직을 설계했습니다.
+          - <mark>AWS S3 API 통합</mark>: 이미지 등 정적 리소스의 안정적인 저장과 빠른 관리를 위해 클라우드 스토리지 연동 시스템을 구축했습니다.
+          - <mark>Toast Alarm 시스템</mark>: 사용자 작업 결과에 대한 즉각적인 피드백을 제공하는 실시간 알림 기능을 구현하여 전체적인 UX(사용자 경험)를 개선했습니다.
 
-          - **기술 스택**: Java, Spring Boot 3, MyBatis, MySQL, React, AWS S3, Docker
+          - <mark>기술 스택<mark>: Java, Spring Boot 3, MyBatis, MySQL, React, AWS S3, Docker
 
   # - title: Experience # Title for the section
   #   layout: list # Type of content section (list/text)
@@ -137,9 +133,9 @@ content:
         # quote: >
         #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
         description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
-
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+          한국공학대학교에서 컴퓨터공학을 전공했습니다. 
+          자료구조, 운영체제, 알고리즘 등 컴퓨터공학 핵심 전공 과목을 이수하고,
+          자바, 웹서비스 프로그래밍, 네트워크 프로그래밍 등 백엔드 직무 관련 과목을 이수했습니다.
 
   # - title: A Little More About Me
   #   layout: text
