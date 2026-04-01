@@ -113,6 +113,7 @@ content:
           - <mark>라우트 보안 처리 (AuthHandler.js)</mark>: React Router와 연동하여 사용자의 인증 상태를 서버(`/api/auth/validate`)와 검증하고, 비인가 사용자의 접근을 차단하여 로그인 페이지로 리다이렉트하는 Private Route 체계를 구현했습니다.
 
           **[인프라 및 배포 (Deployment)]**
+          - <mark>AWS EC2 배포</mark>: AWS EC2의 Ubuntu 환경에서 Docker를 설치해서 컨테이너화 한 이미지를 Docker Compose를 통해 통합 실행하여, 프론트엔드와 백엔드가 안정적으로 통신하는 라이브 운영 서버를 구축했습니다.
           - <mark>Docker 기반 배포 프로세스 구축</mark>: Backend와 Frontend를 각각 Docker 이미지로 컨테이너화하여 환경 의존성을 제거했습니다. Docker Hub와 AWS EC2를 연계한 신속한 이미지 교체 및 재실행 프로세스로 배포 시 서비스 중단 시간을 최소화했습니다.
 
           - **기술 스택**: Java, Spring Boot 3, MyBatis, MySQL, React, AWS S3, Docker
